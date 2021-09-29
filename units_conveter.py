@@ -12,6 +12,9 @@ while b not in {'F', 'C', 'K'}:
 a = input("Please, enter the temperature value :")
 while not is_number(a):
     a = input("Please, enter some number:")
+if b == 'K':
+    while not (float(a) >= 0):
+        a = input("Please, enter some positive number, because your temperature is in K:")
 a = float(a)
 
 
